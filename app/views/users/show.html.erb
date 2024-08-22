@@ -1,0 +1,21 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @user %>
+
+<p> 
+<strong> Name: </strong>
+<%= @user.name %>
+</p>
+
+<p> 
+<strong> Email: </strong>
+<%= @user.email %>
+</p>
+
+<p> 
+  <strong> Contact: </strong>
+  <%= @user.contact %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %>
+<%= link_to 'Back', user_path %>
